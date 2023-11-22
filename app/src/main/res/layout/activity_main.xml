@@ -31,7 +31,6 @@
             android:text="0" />
 
         <LinearLayout
-            android:id="@+id/buttonLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -54,15 +53,45 @@
                 android:text="+"
                 />
         </LinearLayout>
-        <Button
+        <ToggleButton
             android:id="@+id/botonOn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:layout_marginHorizontal="370px"
-            android:text="On"/>
+            />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+  >
+
+    <Button
+        android:id="@+id/botonReset"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_weight="0.5"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:minHeight="48dp"
+        android:text="0" />
+
+    <CheckBox
+        android:id="@+id/CheckConteo"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="Conteo negativo"/>
 
 
+
+</LinearLayout>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
